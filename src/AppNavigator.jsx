@@ -20,6 +20,7 @@ import PatientProfile from './pages/AddPatient/PatientTabs/PatientProfile'
 import Symptoms from './pages/AddPatient/PatientTabs/Symptoms';
 import Treatment from './pages/AddPatient/PatientTabs/Treatment';
 import UploadFiles from './pages/AddPatient/PatientTabs/UploadFiles';
+import UpdatePatient from './pages/AddPatient/PatientTabs/UpdatePatient';
 
 const Tab = createBottomTabNavigator();
 function PatientTabs() {
@@ -95,6 +96,8 @@ const AppNavigator = () => {
           options={{ headerShown: false,headerBackTitleVisible:false}}/>
 <Stack.Screen name={'Patient Tabs'} component={PatientTabs}
           options={{ headerShown: false,headerBackTitleVisible:false}}/>
+<Stack.Screen name={'Update Patient'} component={UpdatePatient}
+          options={{ headerShown: true,headerBackTitleVisible:false}}/>
 
 {/* {/* <Stack.Screen name={'Enter Details'} component={PatientDetail1} */}
 {/* <Stack.Screen name={'Enter Details'} component={PatientDetail1}

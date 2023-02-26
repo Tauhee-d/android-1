@@ -4,7 +4,7 @@ import {AntDesign, FontAwesome,Entypo } from "react-native-vector-icons";
 import { TextInput,TouchableRipple } from 'react-native-paper'
 
 
-const PatientProfile = () => {
+const PatientProfile = ({navigation}) => {
   const [isExpanded, setIsExpanded] = useState(false);
 
   const toggleProfile = () => {
@@ -16,9 +16,12 @@ const PatientProfile = () => {
     <View style={{flexDirection:'row', justifyContent:'space-between'}}>
     <View style={{flexDirection:'row',justifyContent:'space-between',width:90,alignItems:'center'}}>
       <FontAwesome name='male' size='30' />
-      <Text>gchgch</Text>
+      <Text>name</Text>
     </View>
+    <TouchableOpacity onPress={() => navigation.navigate('Update Patient')}>
+
       <Entypo name='edit' size='30' />
+    </TouchableOpacity>
 
     </View>
     <View style={{marginTop:10}}>
